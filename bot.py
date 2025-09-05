@@ -46,7 +46,7 @@ def create_admin_keyboard():
         [InlineKeyboardButton(text="✏️ Изменить описание шаблонов", callback_data="edit_templates")],
         [InlineKeyboardButton(text="📤 Добавить PDF", callback_data="add_pdf")],
         [InlineKeyboardButton(text="🗑️ Удалить PDF", callback_data="delete_pdf")],
-        [InlineKeyboardButton(text="❌ Закрыть админ-панель", callback_data="close_admin")]
+        # [InlineKeyboardButton(text="❌ Закрыть админ-панель", callback_data="close_admin")]
     ])
 
 def create_pdf_delete_keyboard():
