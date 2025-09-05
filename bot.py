@@ -35,14 +35,14 @@ def get_pdf_files():
 
 def create_main_keyboard():
     return InlineKeyboardMarkup(inline_keyboard=[
-        [InlineKeyboardButton(text="📞 Связь с админом", callback_data="contact")],
+        # [InlineKeyboardButton(text="📞 Связь с админом", callback_data="contact")],
         [InlineKeyboardButton(text="📄 Шаблоны", callback_data="templates")]
     ])
 
 def create_admin_keyboard():
     return InlineKeyboardMarkup(inline_keyboard=[
         [InlineKeyboardButton(text="✏️ Изменить приветствие", callback_data="edit_welcome")],
-        [InlineKeyboardButton(text="✏️ Изменить контакты", callback_data="edit_contact")],
+        # [InlineKeyboardButton(text="✏️ Изменить контакты", callback_data="edit_contact")],
         [InlineKeyboardButton(text="✏️ Изменить описание шаблонов", callback_data="edit_templates")],
         [InlineKeyboardButton(text="📤 Добавить PDF", callback_data="add_pdf")],
         [InlineKeyboardButton(text="🗑️ Удалить PDF", callback_data="delete_pdf")],
