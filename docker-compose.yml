@@ -1,0 +1,13 @@
+version: '3.8'
+
+services:
+  bot:
+    build: .
+    container_name: telegram-bot
+    environment:
+      - BOT_TOKEN=${BOT_TOKEN}
+      - ADMIN_ID=${ADMIN_ID}
+    volumes:
+      - ./data:/app/data
+      - ./pdfs:/app/pdfs
+    restart: unless-stopped
